@@ -1194,10 +1194,10 @@ input:focus, textarea:focus
 .contact_form .submit_btn
 {
     margin-top: 20%;
-    margin-left:15%;
+    margin-left:7.5%;
     margin-bottom:10%;
     align-items: center;
-    width:70%;
+    width:200px;
     height:50px;
     color: lightgreen;
     border: solid;
