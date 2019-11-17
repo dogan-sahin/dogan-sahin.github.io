@@ -86,33 +86,7 @@ body
     border-bottom: solid;
     padding-bottom: 2%;
 }
-.title
-{
-   
-    color: white;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
- 
-}
 
-.title-lbl
-{
-    
-    border-top: solid;
-    border-bottom: solid;
-    font-family: 'Alegreya Sans SC';
-    font-size: 3rem;
-
-}
-
-.title-descpt
-{
-    margin-top: -2rem;
-    font-family: 'Julius Sans One';
-    font-size: 1.05rem;
-}
 
 @keyframes opacity {
     0% { opacity: 0%}   
@@ -296,10 +270,6 @@ body
     flex-direction: row;
     justify-content: space-between;
 }
-
-
-
-
 
 .skillbox, .languages
 {
@@ -571,13 +541,6 @@ body
    
 }
 
-.portfolio_projects .project:hover h1
-{
-  display: none;
-   
-}
-
-
 #project1, #project2, #project3
 {
     text-align: center;
@@ -838,5 +801,306 @@ input:focus, textarea:focus
    opacity: 100%;
    
   }
+
+@custom-media --viewport-1 (min-width: 480px);
+@custom-media --viewport-2 (min-width: 768px);
+@custom-media --viewport-3 (min-width: 992px);
+@custom-media --viewport-4 (min-width: 1200px);
+
+@media (max-width: 480px)
+{
+    
+ html{
+   scroll-behavior: smooth;
+        
+  }
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; 
+    }
+    
+    
+    body 
+    {
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    /* Style for Home Page */
+   .home
+    {
+    
+    background: rgb(31,31,31);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+ 
+    }
+
+    .navigation
+    {
+        display: none;
+    }
+
+.title
+{
+   
+    color: cyan;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title-lbl
+{
+    
+    border-top: solid;
+    border-bottom: solid;
+    font-family: 'Alegreya Sans SC';
+    font-size: 5rem;
+  
+
+}
+
+.title-descpt
+{
+    margin-top: 2rem;
+    font-family: 'Julius Sans One';
+    font-size: 2rem;
+}
+
+.social_media_links
+{
+    display: none;
+}
+
+.home .arrow-down
+{
+    
+    margin: 0 auto;
+}
+
+.home .arrow-down .fa 
+{
+    background: rgba(240, 0, 0, 0);
+    margin-bottom: 10%;
+    width: 3rem;
+    height: 3rem;
+    font-size: 5.8rem;
+    color: white;
+    animation: wiggle 1s linear infinite;
+   
+}
+
+.about
+{
+    
+    background: rgb(31, 31, 31);
+    background-size: 100%;
+    height: 270%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: solid rgb(85, 84, 84) 0.5px;
+    
+}
+
+.about_title
+{
+  
+    text-align: center;
+    margin-top: 0%;
+    color:whitesmoke;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.about_title h1
+{
+    font-family: 'Julius Sans One';
+    font-size: 2.5rem;
+    border-bottom: solid;
+    padding: 0.8rem;
+    border-color:rgb(92, 155, 238);
+}
+
+.about_text
+{
+    margin-top: 3%;
+    color:whitesmoke;
+}
+
+.about_text p
+{
+    font-family: 'Varela Round';
+    font-size: 1.2rem;
+    margin: 0 auto;
+    width: 81%;
+    
+}
+
+.about_CV
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skillbox, .languages
+{
+  
+    list-style: none;
+    width: 70%;
+    margin-left: 25%;  
+}
+
+.about_education
+{ 
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 7%;
+    width: 70%;
+    margin-left: 25%;  
+
+}
+
+.about_education h1
+{
+    
+    color: cyan;
+    border-bottom: solid grey;
+    padding: 0.3rem;
+    width: 70%;
+    text-align: center;
+    font-family: 'Alegreya Sans SC';
+    font-size: 2.3rem;
+}
+.about_education .institute
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 50%;
+   
+}
+
+.about_education .institute li
+{
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+
+.about_education .institute h2
+{
+    
+   font-family: 'Varela Round';
+   font-size: 1.1rem;
+   color: grey;
+   width: 100%;
+    
+}
+
+.about_education .institute h3
+{
+    width: 100%;
+   font-family: 'Varela Round';
+   font-size: 1.1rem;
+
+}
+
+.portfolio
+{   background: rgba(31, 31, 31);
+    background-size: 100%;
+    height: 100%;
+    border-top: solid rgb(85, 84, 84) 0.5px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.portfolio_title
+{
+    
+    text-align: center;
+    margin-top: 0%;
+    color:whitesmoke;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.portfolio_title h1
+{
+    font-family: 'Julius Sans One';
+    font-size: 2.5rem;
+    border-bottom: solid;
+    padding: 0.8rem;
+    border-color:rgb(238, 94, 94);
+}
+
+.portfolio_projects
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.portfolio_projects .project
+{
+   margin: 0 auto;
+   color:whitesmoke;
+   border: solid;
+   border-color:rgb(238, 94, 94);
+   height: 150px;
+   width: 150px;
+   margin-top: 5%;
+   transition: transform 2s ease;
+   
+}
+
+
+.contact
+{
+    background: rgba(31, 31, 31);
+    background-size: 100%;
+    height: 90%;
+    border-top: solid rgb(85, 84, 84) 0.5px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 15% 42.5% 42.5%;
+}
+
+.contact_title
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin-top: 0%;
+    color:whitesmoke;
+
+}
+
+.contact_title h1
+{
+    font-family: 'Julius Sans One';
+    font-size: 2rem;
+    border-bottom: solid;
+    padding: 0.8rem;
+    border-color:lightgreen;
+}
+
+
+}
 
  
