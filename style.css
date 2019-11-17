@@ -1,0 +1,842 @@
+
+html{
+    scroll-behavior: smooth;
+    
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Style for Home Page */
+.home
+{
+    background-image: url(/pictures/background_home.jpg);
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    text-align: center;
+    height: 100%;
+    width: auto;
+   /* animation: opacity 1s ease-in;
+    animation-fill-mode:both; */
+    
+}
+.navigation
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  
+   
+}
+
+.navigation ul{
+   
+    margin-left: auto;
+    margin-top: 1.2rem;
+   
+}
+.navigation li {
+    
+    display: inline-block;
+    opacity: 75%;
+    font-size: 0.95rem;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    transition: transform 1.5s;
+    font-family: 'Varela Round';
+    font-weight: 700;
+   
+}
+
+.navigation li:hover{
+
+    opacity: 100%;
+    transform: translateY(10px);
+}
+
+
+.navigation a
+{
+    text-decoration: none;
+    color:white;
+    border-radius: 8%;
+    padding: 0.3rem;
+    
+}
+.navigation a:hover
+{
+    color:white;;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navigation .home-btn
+{
+    border-bottom: solid;
+    padding-bottom: 2%;
+}
+.title
+{
+   
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+ 
+}
+
+.title-lbl
+{
+    
+    border-top: solid;
+    border-bottom: solid;
+    font-family: 'Alegreya Sans SC';
+    font-size: 3rem;
+
+}
+
+.title-descpt
+{
+    margin-top: -2rem;
+    font-family: 'Julius Sans One';
+    font-size: 1.05rem;
+}
+
+@keyframes opacity {
+    0% { opacity: 0%}   
+    10% {  opacity: 10%}
+    20% {  opacity: 20%}
+    30% {  opacity: 30%}
+    40% { opacity: 40%}
+    50% {  opacity: 50%}
+    60% {  opacity: 60%}
+    70% {  opacity: 70%}
+    80% { opacity: 80%}
+    90% { opacity: 90%}
+    100% { opacity: 100%}
+}
+
+.social_media_links
+{
+   
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 70%;
+    margin-bottom: 10%;
+
+}
+.social_media_links .fa {
+    
+    padding: 10px;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    border: solid;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 12%;
+    color: white;
+    transition: transform 1s ease;
+   
+  }
+
+  .social_media_links .fa-instagram{
+      font-size:35px;
+  }
+
+  .social_media_links .fa:hover{
+    transform: translateX(-10px);
+    
+  }
+
+  .social_media_links .fa-instagram:hover
+  {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  }
+
+  .social_media_links .fa-linkedin:hover
+  {
+      color: rgb(255,255,255);
+      background: rgb(40, 103, 178);
+  }
+
+  .social_media_links .fa-github:hover
+  {
+      color: rgb(255,255,255);
+      background: rgb(33, 31, 31);
+  }
+
+
+.home .arrow-down
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    margin-top: 25%;
+}
+
+.home .arrow-down .fa 
+{
+    background: rgba(255, 255, 255, 0);
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    color: white;
+    animation: wiggle 1s linear infinite;
+   
+}
+
+@keyframes wiggle {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+   
+
+
+/* Style for About Page */
+.about
+{
+    /*background: url(/pictures/blackwhite.jpg);*/
+    background: rgb(31, 31, 31);
+    background-size: 100%;
+    height: 210%;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+    grid-template-rows: 10% 20% auto auto;
+    border-top: solid rgb(85, 84, 84) 0.5px;
+    
+}
+
+.about_title
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin-top: 0%;
+    color:whitesmoke;
+
+}
+
+.about_title h1
+{
+    font-family: 'Julius Sans One';
+    font-size: 2rem;
+    border-bottom: solid;
+    padding: 0.8rem;
+    border-color:rgb(92, 155, 238);
+}
+
+.about_text
+{
+    margin-top: 3%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end: 2;
+    text-align: center;
+    color:whitesmoke;
+  
+
+}
+
+.about_text p
+{
+    font-family: 'Varela Round';
+    font-size: 1rem;
+    margin: 0 auto;
+    width: 50%;
+    
+}
+
+.about_text a
+{
+    text-decoration: none;
+    color: rgb(92, 155, 238);
+    
+}
+
+
+.about_CV
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+
+.skillbox, .languages
+{
+  
+    list-style: none;
+    width: 50%;
+    margin-left: 10%;  
+    margin-top: 3%;   
+}
+
+
+
+.skillbox h1, .languages h1
+{
+    font-family: 'Alegreya Sans SC';
+    font-size: 2.3rem;
+    text-align: center;
+    border-bottom:solid grey;
+    padding: 0.3rem;
+    width: 70%;
+    color: rgb(92, 155, 238);
+    
+}
+
+.skillbox li, .languages li
+{
+    margin: 2% 0;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+    grid-template-rows: 60% 40%;
+
+}
+
+.skillbox li h3, .languages li h3
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-family: 'Varela Round';
+    font-size: 1rem;
+    color: whitesmoke;
+}
+
+
+.skillbox .bar, .languages .bar
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background: rgb(31, 31, 31);
+    display: block;
+    height: 1rem;
+    border: 1px solid rgb(92, 155, 238);
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+
+.skillbox .bar span, .languages .bar span
+{
+    height: 1rem;
+    float: left;
+    background: rgb(46, 82, 129);
+    
+}
+
+.about_CV:hover .bar span
+{
+    
+   display: block;
+   animation: fillspan 2s ease;
+   animation-iteration-count: 1;
+}
+
+@keyframes fillspan
+{
+    0%
+    {
+        width: 0;
+    }
+}
+
+.languages h1
+{
+    color: rgb(247, 40, 82);
+} 
+
+.languages .bar{
+    border-color: rgb(247, 40, 82);
+}
+
+.languages .bar span
+{
+    background: rgb(238, 33, 74);
+}
+
+.html
+{ 
+    width: 90%;
+    
+}
+
+.css
+{ 
+    width: 80%;
+}
+
+.javascript
+{ 
+    width: 10%;
+}
+
+.c
+{ 
+    width: 40%;
+}
+
+.java
+{ 
+    width: 50%;
+}
+
+.turkish
+{
+    width: 100%;
+}
+
+.german
+{
+    width: 90%;
+}
+
+.english
+{
+    width: 65%;
+}
+
+
+.about_education
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    margin-bottom: 7% ;
+
+}
+
+.about_education h1
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    color: cyan;
+    border-bottom: solid grey;
+    text-align: center;
+    font-family: 'Alegreya Sans SC';
+    font-size: 2.3rem;
+}
+
+
+.about_education .institute
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+     justify-content: space-around;
+   
+}
+
+.about_education .institute li
+{
+    list-style-type: none;
+    display: inline-flex;
+    color: whitesmoke;
+    
+}
+
+.about_education .institute h2
+{
+   margin-left: 10%;
+   font-family: 'Varela Round';
+   font-size: 1.1rem;
+   color: grey;
+    
+}
+
+.about_education .institute h3
+{
+   margin-left: 20%;
+   font-family: 'Varela Round';
+   font-size: 1.1rem;
+    
+}
+
+.about_education .institute h3 span
+{
+  color: cyan;
+    
+}
+/* Style for Portfolio */
+
+.portfolio
+{   background: rgba(31, 31, 31);
+    background-size: 100%;
+    height: 100%;
+    border-top: solid rgb(85, 84, 84) 0.5px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: auto 25% 25% 25%;
+}
+
+.portfolio_title
+{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin-top: 0%;
+    color:whitesmoke;
+}
+
+.portfolio_title h1
+{
+    font-family: 'Julius Sans One';
+    font-size: 2rem;
+    border-bottom: solid;
+    padding: 0.8rem;
+    border-color:rgb(238, 94, 94);
+}
+
+.portfolio_projects
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.portfolio_projects .project
+{
+   color:whitesmoke;
+   border: solid;
+   border-color:rgb(238, 94, 94);
+   height: 230px;
+   width: 230px;
+   transition: transform 2s ease;
+   
+}
+
+
+.portfolio_projects .project:hover
+{
+  background: rgb(179, 97, 97);
+  transform: scale(1.1);
+   
+}
+
+.portfolio_projects .project:hover h1
+{
+  display: none;
+   
+}
+
+
+#project1, #project2, #project3
+{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40%;
+    font-family: 'Varela Round';
+    color: whitesmoke;
+}
+
+.contact
+{
+    background: rgba(31, 31, 31);
+    background-size: 100%;
+    height: 90%;
+    border-top: solid rgb(85, 84, 84) 0.5px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 15% 42.5% 42.5%;
+}
+
+.contact_title
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin-top: 0%;
+    color:whitesmoke;
+
+}
+
+.contact_title h1
+{
+    font-family: 'Julius Sans One';
+    font-size: 2rem;
+    border-bottom: solid;
+    padding: 0.8rem;
+    border-color:lightgreen;
+}
+
+.contact_text
+{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: inline-block;
+    text-align: center;
+    
+   
+}
+
+.contact_text h1
+{
+    margin-top: 30%;
+    color: lightgreen;
+    margin-left: 25%;
+    font-size: 1.6rem;
+    font-family: 'Varela Round';
+    border-top: solid lightgreen;
+    border-bottom: solid lightgreen;
+    padding: 1rem;
+}
+
+.contact_form
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+ 
+}
+
+.contact_form form
+{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    color:whitesmoke;
+   
+}
+
+.contact_form .submit_btn
+{
+    width:80px;
+    height:40px;
+    color: lightgreen;
+    border: solid;
+    border-color: lightgreen;
+    background: transparent;
+    font-family: 'Varela Round';
+    font-size: 0.85rem;
+    transition: transform 1s ease;
+    
+}
+
+.submit_btn:hover
+{
+    background: lightgreen;
+    transform: scale(1.05);
+    color: rgba(31, 31, 31);
+   
+}
+
+
+
+.fname_field, .lname_field, .email_field, .message_field 
+{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     color:whitesmoke;
+     font-family: 'Varela Round';
+     font-size:0.8rem;
+}
+
+.contact_form input
+{   border: none;
+    background: rgb(48, 46, 46);
+    border-bottom: solid lightgreen;
+    color:whitesmoke;
+    font-family: 'Varela Round';
+   
+   
+}
+
+input::placeholder, textarea::placeholder
+{
+    color:white;
+    
+}
+
+input:focus, textarea:focus
+{
+    outline: solid transparent;
+}
+
+.contact_form textarea
+{
+    border: none;
+    background: rgb(48, 46, 46);
+    border: solid lightgreen;
+    height: 60px;
+    color: whitesmoke;
+    font-family: 'Varela Round';
+    width:150%;
+}
+
+
+
+.footer
+{
+    background: rgb(24, 24, 24);
+    height: 10%;
+    border-top: solid rgb(85, 84, 84) 0.5px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+    grid-template-rows: auto;
+}
+
+.footer_copyright
+{
+    
+    grid-column-start:1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+}
+
+.footer_copyright h1
+{
+   margin-top: 6%;
+   font-size:0.6rem;
+   color: whitesmoke;
+   font-family: 'Varela Round';
+}
+
+.footer_navigation
+{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    
+}
+
+.footer_navigation ul
+{
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer_navigation li {
+    
+   
+    opacity: 75%;
+    font-size: 0.7rem;
+    font-family: 'Varela Round';
+    font-weight: 700;
+   
+}
+
+.footer_navigation li:hover{
+
+    opacity: 100%;    
+}
+
+.footer_navigation a
+{
+    
+    color:white;
+    text-decoration: none;
+    
+}
+.footer_navigation a:hover
+{
+    color:white;;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.footer_links
+{
+   
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: inline-block;
+    text-align: center;
+    
+
+}
+.footer_links .fa {
+    
+    margin-top: 5%;
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 75%;
+    margin-right: 3%;
+    
+
+   
+  }
+  
+  .footer_links .fa:hover {
+    
+   opacity: 100%;
+   
+  }
+
+ 
