@@ -874,8 +874,6 @@ input:focus, textarea:focus
 
 .title
 {
-   
-    color: cyan;
     width: 80%;
     margin: 0 auto;
 }
@@ -885,6 +883,7 @@ input:focus, textarea:focus
     
     border-top: solid;
     border-bottom: solid;
+    border-color: crimson;
     font-family: 'Alegreya Sans SC';
     font-size: 4rem;
   
@@ -893,6 +892,7 @@ input:focus, textarea:focus
 
 .title-descpt
 {
+    color: whitesmoke;
     margin-top: 2rem;
     font-family: 'Julius Sans One';
     font-size: 1.7rem;
@@ -916,7 +916,7 @@ input:focus, textarea:focus
     width: 3rem;
     height: 3rem;
     font-size: 5.8rem;
-    color: white;
+    color: crimson;
     animation: wiggle 1s linear infinite;
    
 }
@@ -950,7 +950,7 @@ input:focus, textarea:focus
     font-family: 'Julius Sans One';
     font-size: 2.5rem;
     border-bottom: solid;
-    padding: 0.8rem;
+    padding: 2rem;
     border-color:rgb(92, 155, 238);
 }
 
@@ -963,7 +963,7 @@ input:focus, textarea:focus
 .about_text p
 {
     font-family: 'Varela Round';
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0 auto;
     width: 81%;
     
@@ -1194,11 +1194,11 @@ input:focus, textarea:focus
 .contact_form .submit_btn
 {
     margin-top: 20%;
-    margin-left:7.5%;
+    margin-left:15%;
     margin-bottom:10%;
     align-items: center;
-    width:200px;
-    height:50px;
+    width:10rem;
+    height:4rem;
     color: lightgreen;
     border: solid;
     border-color: lightgreen;
