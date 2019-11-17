@@ -986,7 +986,7 @@ input:focus, textarea:focus
 }
 
 .about_education
-{ 
+{   margin-top: 10%;
     display: flex;
     flex-direction: column;
     grid-template-columns: 33.3% 33.3% 33.3%;
@@ -1194,9 +1194,9 @@ input:focus, textarea:focus
 .contact_form .submit_btn
 {
     margin-top: 20%;
-    margin-left:20%;
+    margin-left:15%;
     margin-bottom:10%;
-    align-content: center;
+    align-items: center;
     width:70%;
     height:50px;
     color: lightgreen;
