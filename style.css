@@ -31,6 +31,35 @@ body
     animation-fill-mode:both; */
     
 }
+
+.title
+{
+   
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+ 
+}
+
+.title-lbl
+{
+    
+    border-top: solid;
+    border-bottom: solid;
+    font-family: 'Alegreya Sans SC';
+    font-size: 3rem;
+
+}
+
+.title-descpt
+{
+    margin-top: -2rem;
+    font-family: 'Julius Sans One';
+    font-size: 1.05rem;
+}
+
 .navigation
 {
     grid-column-start: 1;
@@ -589,9 +618,7 @@ body
     grid-row-start: 2;
     grid-row-end: 4;
     display: inline-block;
-    text-align: center;
-    
-   
+    text-align: center; 
 }
 
 .contact_text h1
@@ -859,7 +886,7 @@ input:focus, textarea:focus
     border-top: solid;
     border-bottom: solid;
     font-family: 'Alegreya Sans SC';
-    font-size: 5rem;
+    font-size: 4rem;
   
 
 }
@@ -868,7 +895,7 @@ input:focus, textarea:focus
 {
     margin-top: 2rem;
     font-family: 'Julius Sans One';
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .social_media_links
@@ -899,7 +926,7 @@ input:focus, textarea:focus
     
     background: rgb(31, 31, 31);
     background-size: 100%;
-    height: 270%;
+    height: 280%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1072,34 +1099,120 @@ input:focus, textarea:focus
 {
     background: rgba(31, 31, 31);
     background-size: 100%;
-    height: 90%;
+    height: auto;
     border-top: solid rgb(85, 84, 84) 0.5px;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 15% 42.5% 42.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 .contact_title
 {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
     text-align: center;
     margin-top: 0%;
     color:whitesmoke;
+    margin: 0 auto;
+    width: 80%;
 
 }
 
 .contact_title h1
 {
     font-family: 'Julius Sans One';
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-bottom: solid;
     padding: 0.8rem;
     border-color:lightgreen;
 }
 
+.contact_text
+{
+    display: block;
+    text-align: center; 
+}
+
+.contact_text h1
+{
+    margin: 0 auto;
+    color: lightgreen;
+    font-size: 1.6rem;
+    font-family: 'Varela Round';
+    width: 80%;
+    border: solid transparent;
+}
+
+.contact_form form
+{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    color:whitesmoke;
+   
+}
+
+
+.fname_field, .lname_field, .email_field, .message_field, .submit_btn 
+{
+    margin-top: 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     color:whitesmoke;
+     font-family: 'Varela Round';
+     font-size:2rem;
+}
+
+.contact_form input
+{   border: none;
+    background: rgb(48, 46, 46);
+    border-bottom: solid lightgreen;
+    color:whitesmoke;
+    font-family: 'Varela Round';
+    font-family: 'Varela Round';
+    font-size:1.5rem;
+    height: 2.5rem;
+    margin-top: 4%;
+}
+
+.contact_form textarea
+{
+    
+    border: none;
+    background: rgb(48, 46, 46);
+    border: solid lightgreen;
+    color: whitesmoke;
+    font-family: 'Varela Round';
+    font-size:1.5rem;
+    width:100%;
+    height: 10rem;
+}
+
+.contact_form .submit_btn
+{
+    margin-top: 20%;
+    margin-left:20%;
+    margin-bottom:10%;
+    align-content: center;
+    width:70%;
+    height:50px;
+    color: lightgreen;
+    border: solid;
+    border-color: lightgreen;
+    background: transparent;
+    font-family: 'Varela Round';
+    font-size: 2rem;
+    transition: transform 1s ease;
+    
+}
+
+
+.footer
+{
+    display: none;
+}
 
 }
 
