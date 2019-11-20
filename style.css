@@ -862,7 +862,6 @@ input:focus, textarea:focus
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100%;
     width: 100%;
  
     }
@@ -885,7 +884,7 @@ input:focus, textarea:focus
     border-bottom: solid;
     border-color: crimson;
     font-family: 'Alegreya Sans SC';
-    font-size: 4rem;
+    font-size: 3.5rem;
   
 
 }
@@ -895,7 +894,7 @@ input:focus, textarea:focus
     color: whitesmoke;
     margin-top: 2rem;
     font-family: 'Julius Sans One';
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
 
 .social_media_links
@@ -1163,7 +1162,7 @@ input:focus, textarea:focus
      justify-content: space-around;
      color:whitesmoke;
      font-family: 'Varela Round';
-     font-size:2rem;
+     font-size:1.5rem;
 }
 
 .contact_form input
@@ -1171,7 +1170,6 @@ input:focus, textarea:focus
     background: rgb(48, 46, 46);
     border-bottom: solid lightgreen;
     color:whitesmoke;
-    font-family: 'Varela Round';
     font-family: 'Varela Round';
     font-size:1.5rem;
     height: 2.5rem;
@@ -1194,7 +1192,6 @@ input:focus, textarea:focus
 .contact_form .submit_btn
 {
     margin-top: 20%;
-    margin-left:15%;
     margin-bottom:10%;
     align-items: center;
     width:10rem;
@@ -1204,7 +1201,7 @@ input:focus, textarea:focus
     border-color: lightgreen;
     background: transparent;
     font-family: 'Varela Round';
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: transform 1s ease;
     
 }
