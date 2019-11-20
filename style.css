@@ -27,8 +27,7 @@ body
     text-align: center;
     height: 100%;
     width: auto;
-   /* animation: opacity 1s ease-in;
-    animation-fill-mode:both; */
+
     
 }
 
@@ -117,20 +116,6 @@ body
 }
 
 
-@keyframes opacity {
-    0% { opacity: 0%}   
-    10% {  opacity: 10%}
-    20% {  opacity: 20%}
-    30% {  opacity: 30%}
-    40% { opacity: 40%}
-    50% {  opacity: 50%}
-    60% {  opacity: 60%}
-    70% {  opacity: 70%}
-    80% { opacity: 80%}
-    90% { opacity: 90%}
-    100% { opacity: 100%}
-}
-
 .social_media_links
 {
    
@@ -204,9 +189,55 @@ body
     height: 3rem;
     font-size: 3rem;
     color: white;
+    -moz-animation: wiggle 1s linear infinite;
+    -o-animation: wiggle 1s linear infinite;
+    -webkit-animation: wiggle 1s linear infinite;
     animation: wiggle 1s linear infinite;
    
 }
+
+@-moz-keyframes wiggle {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@-o-keyframes wiggle {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@-webkit-keyframes wiggle {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(10px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
+
 
 @keyframes wiggle {
 	0% {
@@ -372,7 +403,36 @@ body
     
    display: block;
    animation: fillspan 2s ease;
-   animation-iteration-count: 1;
+   -o-animation: fillspan 2s ease;
+   -moz-animation: fillspan 2s ease;
+   -webkit-animation: fillspan 2s ease;
+
+}
+
+
+
+@-moz-keyframes fillspan
+{
+    0%
+    {
+        width: 0;
+    }
+}
+
+@-o-keyframes fillspan
+{
+    0%
+    {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes fillspan
+{
+    0%
+    {
+        width: 0;
+    }
 }
 
 @keyframes fillspan
