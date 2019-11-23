@@ -49,7 +49,7 @@ body
     border-top: solid;
     border-bottom: solid;
     font-family: 'Alegreya Sans SC';
-    font-size: calc(20px + 2.4vw);
+    font-size: calc(20px + 2.7vw);
     margin-top: -0.8vh;
 
 }
@@ -58,7 +58,7 @@ body
 {
     
     font-family: 'Julius Sans One';
-    font-size: calc(16px + 0.2vw);
+    font-size: calc(12px + 0.9vw);
     
 }
 
@@ -74,8 +74,9 @@ body
 
 .navigation ul{
    
-    margin-left: auto;
+    
     margin-top: 4vh;
+    margin-right: 6vh;
    
 }
 .navigation li {
@@ -137,9 +138,10 @@ body
 .social_media_links .fa {
     
     padding: 5px;
-    font-size: calc(20px + 1vw);
-    width:calc(20px + 1vw);
-    height: calc(20px + 1vw);
+   
+    font-size: calc(20px + 1.1vw);
+    width:calc(20px + 1.1vw);
+    height: calc(20px + 1.1vw);
     text-decoration: none;
     text-align: center;
     margin-bottom: 17%;
@@ -149,7 +151,7 @@ body
   }
 
   .social_media_links .fa-instagram{
-      font-size:calc(18px + 1vw);
+      font-size:calc(18px + 1.1vw);
   }
 
   .social_media_links .fa:hover{
@@ -354,7 +356,7 @@ body
     text-align: center;
     border-bottom:solid grey;
     padding: 0.3em;
-    width: 50%;
+    width: calc(140px + 8vw);
     color: rgb(92, 155, 238);
     
 }
@@ -512,17 +514,17 @@ body
     grid-row-start: 4;
     grid-row-end: 4;
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 30% 40% 30%;
     grid-template-rows: 50% 50%;
-    
+    margin-top: 5%;
     
 
 }
 
 .about_education h1
 {
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
     grid-row-start: 0;
     grid-row-end: 1;
     color: cyan;
@@ -530,12 +532,17 @@ body
     text-align: center;
     font-family: 'Alegreya Sans SC';
     font-size: calc(25px + 1.2vw);
+    width: calc(140px + 8vw);
+    margin: 0 auto;
+    padding: 0.3em;
     
+   
 }
 
 
 .about_education .institute
 {
+    
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -550,16 +557,20 @@ body
 .about_education .institute li
 {
     
-    margin-top: 12%;
+    margin-top: 15%;
     text-align: left;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: whitesmoke;
+}
 
-   
+.about_education .institute .first_institute
+{
     
+    margin-top: 30%;
+
 }
 
 .about_education .institute h2
@@ -664,9 +675,7 @@ body
 
 .contact
 {
-    background: rgba(31, 31, 31);
-  
-    
+    background: rgba(31, 31, 31);  
     border-top: solid rgb(85, 84, 84) 0.5px;
     display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -688,7 +697,7 @@ body
 .contact_title h1
 {
     font-family: 'Julius Sans One';
-    font-size: 2rem;
+    font-size: calc(20px + 1vw);
     border-bottom: solid;
     padding: 0.8rem;
     border-color:lightgreen;
@@ -743,15 +752,15 @@ body
 
 .contact_form .submit_btn
 {
-    width:80px;
-    height:40px;
+    width:7vw;
+    height:6vh;
     color: lightgreen;
     border: solid;
     border-color: lightgreen;
     background: transparent;
     font-family: 'Varela Round';
-    font-size: calc(12px + 0.23vw);
-    margin-top: 20%;
+    font-size: calc(15px + 0.23vw);
+    margin-top: 8%;
     transition: transform 1s ease;
     
 }
@@ -773,7 +782,7 @@ body
      justify-content: space-around;
      color:whitesmoke;
      font-family: 'Varela Round';
-     font-size:calc(12px + 0.20vw);
+     font-size:calc(15px + 0.25vw);
      margin-top: 20%;
 }
 
@@ -801,6 +810,7 @@ input:focus, textarea:focus
 
 .contact_form textarea
 {
+    margin-top: 2%;
     border: none;
     background: rgb(48, 46, 46);
     border: solid lightgreen;
@@ -855,7 +865,7 @@ input:focus, textarea:focus
     margin-top: 6%;
     display: flex;
     justify-content: space-between;
-    
+    list-style-type: none;
 }
 
 .footer_navigation li {
@@ -882,7 +892,7 @@ input:focus, textarea:focus
 }
 .footer_navigation a:hover
 {
-    color:white;;
+    color:white;
     background-color: rgba(0, 0, 0, 0);
 
 }
@@ -946,18 +956,11 @@ input:focus, textarea:focus
     margin-top: 0%;
     color:whitesmoke;
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
 
 }
 
-.contact_title h1
-{
-    font-family: 'Julius Sans One';
-    font-size: 2.5rem;
-    border-bottom: solid;
-    padding: 0.8rem;
-    border-color:lightgreen;
-}
+
 
 .contact_text
 {
@@ -969,7 +972,7 @@ input:focus, textarea:focus
 {
     margin: 0 auto;
     color: lightgreen;
-    font-size: 1.6rem;
+    font-size: calc(16px + 1vw);
     font-family: 'Varela Round';
     width: 80%;
     border: solid transparent;
@@ -995,7 +998,7 @@ input:focus, textarea:focus
      justify-content: space-around;
      color:whitesmoke;
      font-family: 'Varela Round';
-     font-size:1.5rem;
+     font-size: calc(10px + 1.5vw);
 }
 
 .contact_form input
@@ -1027,14 +1030,14 @@ input:focus, textarea:focus
     margin-top: 20%;
     margin-bottom:10%;
     align-items: center;
-    width:10rem;
-    height:4rem;
+    width:25vw;
+    height:10vh;
     color: lightgreen;
     border: solid;
     border-color: lightgreen;
     background: transparent;
     font-family: 'Varela Round';
-    font-size: 1.5rem;
+    font-size: calc(13px + 1.5vw);
     transition: transform 1s ease;
     
 }
@@ -1042,8 +1045,100 @@ input:focus, textarea:focus
 
 .footer
 {
-    display: none;
+    background: rgb(24, 24, 24);
+    height: auto;
+    border-top: solid rgb(85, 84, 84) 0.5px;
+    display: flex;
+    flex-direction: column;
+    
 }
+
+.footer_copyright
+{
+    
+    margin: 0 auto;
+}
+
+.footer_copyright h1
+{
+   font-size:calc(7px + 0.5vw);
+   color: whitesmoke;
+   font-family: 'Varela Round';
+   margin-top: 10%;
+   margin-bottom: 5%;
+}
+
+.footer_navigation
+{
+    margin-right: 28px;
+}
+
+.footer_navigation ul
+{
+   
+    align-self: center;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+.footer_navigation li {
+    
+   
+    margin-top: 2%;
+    opacity: 75%;
+    font-size:calc(10px + 0.4vw);
+    font-family: 'Varela Round';
+    font-weight: 700;
+   
+}
+
+.footer_navigation li:hover{
+
+    opacity: 100%;    
+}
+
+.footer_navigation a
+{
+    
+    color:white;
+    text-decoration: none;
+    
+}
+.footer_navigation a:hover
+{
+    color:white;;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.footer_links
+{
+
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    
+    
+
+}
+.footer_links .fa {
+    
+    
+    margin-top: 5%;
+    padding: 1vw;
+    font-size:calc(20px + 0.4vw);
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 75%;
+    
+    
+
+   
+  }
 
 }
 
