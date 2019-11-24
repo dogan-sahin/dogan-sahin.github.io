@@ -1,6 +1,7 @@
 
 html{
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;  
     
 }
 ::-webkit-scrollbar {
@@ -34,10 +35,12 @@ body
 {
    
     color: white;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    width: 50%;
+    margin: 0 auto;
     
  
 }
@@ -82,6 +85,7 @@ body
     
     margin-top: 4vh;
     margin-right: 6vh;
+    display: block;
    
 }
 .navigation li {
@@ -97,7 +101,7 @@ body
    
 }
 
-.navigation li:hover{
+.navigation li:hover, .navigation li:active{
 
     opacity: 100%;
     transform: translateY(10px);
@@ -112,7 +116,7 @@ body
     padding: 0.3em;
     
 }
-.navigation a:hover
+.navigation a:hover, .navigation a:active
 {
     color:white;;
     background-color: rgba(0, 0, 0, 0);
@@ -159,23 +163,23 @@ body
       font-size:calc(18px + 1.1vw);
   }
 
-  .social_media_links .fa:hover{
+  .social_media_links .fa:hover, .social_media_links .fa:active{
     transform: translateX(-10px);
     
   }
 
-  .social_media_links .fa-instagram:hover
+  .social_media_links .fa-instagram:hover, .social_media_links .fa-instagram:active
   {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   }
 
-  .social_media_links .fa-linkedin:hover
+  .social_media_links .fa-linkedin:hover, .social_media_links .fa-linkedin:active
   {
       color: rgb(255,255,255);
       background: rgb(40, 103, 178);
   }
 
-  .social_media_links .fa-github:hover
+  .social_media_links .fa-github:hover, .social_media_links .fa-github:active
   {
       color: rgb(255,255,255);
       background: rgb(33, 31, 31);
@@ -194,9 +198,9 @@ body
 .home .arrow-down .fa 
 {
     background: rgba(255, 255, 255, 0);
-    width: calc(20px + 3vw);
-    height: calc(20px + 3vw);
-    font-size: calc(20px + 3vw);
+    width: calc(25px + 3vw);
+    height: calc(25px + 3vw);
+    font-size: calc(25px + 3vw);
     color: white;
     -moz-animation: wiggle 1s linear infinite;
     -o-animation: wiggle 1s linear infinite;
@@ -269,7 +273,7 @@ body
 {
     /*background: url(/pictures/blackwhite.jpg);*/
     background: rgb(31, 31, 31);
-    background-size: 100%;
+
     height: auto;
     display: grid;
     grid-template-columns: 30% 40% 30% ;
@@ -408,7 +412,7 @@ body
     
 }
 
-.about_CV:hover .bar span
+.about_CV:hover .bar span, .about_CV:focus .bar span
 {
     
    display: block;
@@ -511,24 +515,35 @@ body
 
 .about_education
 {
+    margin-top: 10vh;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 4;
     display: grid;
     grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 50% 50%;
-    margin-top: 5%;
-    
-
+    grid-template-rows: 20% 80%;
+    height: auto;
+    margin-bottom: 20vh;
+   
 }
 
-.about_education h1
+.about_education .education_title
 {
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 0;
+    grid-row-start: 1;
     grid-row-end: 1;
+    color: cyan;
+    margin: 0 auto;
+  
+   
+}
+
+.about_education .education_title h1
+{
+    
+    padding-bottom: 0.3em;
     color: cyan;
     border-bottom: solid grey;
     text-align: center;
@@ -536,8 +551,6 @@ body
     font-size: calc(25px + 1.2vw);
     width: calc(140px + 8vw);
     margin: 0 auto;
-    padding: 0.3em;
-    
    
 }
 
@@ -547,7 +560,7 @@ body
     
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-row-end: 2;
     display: flex;
     flex-direction: column;
@@ -558,21 +571,13 @@ body
 
 .about_education .institute li
 {
-    
-    margin-top: 15%;
+
     text-align: left;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: whitesmoke;
-}
-
-.about_education .institute .first_institute
-{
-    
-    margin-top: 30%;
-
 }
 
 .about_education .institute h2
@@ -658,7 +663,7 @@ body
 }
 
 
-.portfolio_projects .project:hover
+.portfolio_projects .project:hover, .portfolio_projects .project:active
 {
   background: rgb(179, 97, 97);
   transform: scale(1.1);
@@ -669,9 +674,9 @@ body
 {
     
     text-align: center;
-    margin-top: 13%;
+    
     font-family: 'Varela Round';
-    font-size: calc(16px + 0.7vw);
+    font-size: calc(16px + 1vw);
     color: whitesmoke;
 }
 
@@ -767,7 +772,7 @@ body
     
 }
 
-.submit_btn:hover
+.submit_btn:hover, .submit_btn:active
 {
     background: lightgreen;
     transform: scale(1.05);
@@ -882,7 +887,8 @@ input:focus, textarea:focus
    
 }
 
-.footer_navigation li:hover{
+.footer_navigation li:hover, .footer_navigation li:active
+{
 
     opacity: 100%;    
 }
@@ -894,7 +900,7 @@ input:focus, textarea:focus
     text-decoration: none;
     
 }
-.footer_navigation a:hover
+.footer_navigation a:hover, .footer_navigation a:active
 {
     color:white;
     background-color: rgba(0, 0, 0, 0);
@@ -926,7 +932,7 @@ input:focus, textarea:focus
    
   }
   
-  .footer_links .fa:hover {
+  .footer_links .fa:hover, .footer_links .fa:active {
     
    opacity: 100%;
    
@@ -956,15 +962,6 @@ input:focus, textarea:focus
         margin-left: 75vw;
         
     }
-
-    .title-lbl
-{
-    
-    margin-top: -10vh;
-    font-size: calc(28px + 2vw);
-}
-
-
     .navigation .navigation_list{
    
        
@@ -973,8 +970,6 @@ input:focus, textarea:focus
         display: none;
     }
 
-
-  
 
     .navigation li {
     
@@ -990,7 +985,7 @@ input:focus, textarea:focus
        
     }
     
-    .navigation li:hover{
+    .navigation li:hover, .navigation li:active{
     
         opacity: 100%;
         transform: none;
@@ -1004,7 +999,7 @@ input:focus, textarea:focus
         padding: 0.3em;
         
     }
-    .navigation a:hover
+    .navigation a:hover,  .navigation a:active
     {
         color:white;;
         background-color: rgba(0, 0, 0, 0);
@@ -1017,11 +1012,8 @@ input:focus, textarea:focus
     }
 }
 
-
-@media (max-width: 600px)
+/*@media (max-width: 1024px)
 {
-    
-
 
     .social_media_links .fa {   
         transition: none;
@@ -1046,6 +1038,11 @@ input:focus, textarea:focus
         background: transparent;
       }
 
+}*/
+
+@media (max-width: 600px)
+{
+    
 .contact
 {
     background: rgba(31, 31, 31);
@@ -1139,7 +1136,7 @@ input:focus, textarea:focus
     margin-bottom:10%;
     align-items: center;
     width:25vw;
-    height:10vh;
+    height:8vh;
     color: lightgreen;
     border: solid;
     border-color: lightgreen;
