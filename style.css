@@ -1,10 +1,10 @@
 
 html{
     
-    /*scroll-behavior: smooth;*/
-    -webkit-overflow-scrolling: touch;  
     
+    -webkit-overflow-scrolling: touch;  
 }
+
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent; 
@@ -411,19 +411,24 @@ body
     height: 1rem;
     float: left;
     background: rgb(46, 82, 129);
+    display: none;
     
 }
 
-.about_CV:hover .bar span, .about_CV:active .bar span
+
+
+.about:hover .bar span, .about:active .bar span
 {
     
    display: block;
    animation: fillspan 2s ease;
+   animation-iteration-count: 2;
    -o-animation: fillspan 2s ease;
    -moz-animation: fillspan 2s ease;
    -webkit-animation: fillspan 2s ease;
 
 }
+
 
 
 
@@ -942,11 +947,6 @@ input:focus, textarea:focus
   }
 
 
-@custom-media --viewport-1 (min-width: 480px);
-@custom-media --viewport-2 (min-width: 768px);
-@custom-media --viewport-3 (min-width: 992px);
-@custom-media --viewport-4 (min-width: 1200px);
-
 @media (max-width: 450px)
 {
 
@@ -1015,33 +1015,7 @@ input:focus, textarea:focus
     }
 }
 
-/*@media (max-width: 1024px)
-{
 
-    .social_media_links .fa {   
-        transition: none;
-      }
-      .social_media_links .fa:hover{
-        transform: none;
-        
-      }
-
-      .social_media_links .fa-instagram:hover
-      {
-        background: transparent;
-      }
-    
-      .social_media_links .fa-linkedin:hover
-      {
-        background: transparent;
-      }
-    
-      .social_media_links .fa-github:hover
-      {
-        background: transparent;
-      }
-
-}*/
 
 @media (max-width: 600px)
 {

@@ -9,8 +9,8 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
         
-        <script type="text/javascript" src="script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
         <title>Dogan Sahin</title>
         <meta name="viewport" content="width=device-width", initial-scale = 1.0">
     </head>
@@ -183,57 +183,8 @@
               
                  
             </section>
-        </div> 
- 
- 
- 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script>
-        $(".dropdown").click(function()
-            {
-        
-                if($(".title").is(':visible'))
-                {
-                    $(".navigation_list").slideDown(500);
-                    $(".title").css("display","none"); 
-                }
-
-                else
-                {
-                    $(".navigation_list").slideUp(1);
-                    $(".title").css("display","block");
-                    
-                }
-               
-        });
-
-        $(document).ready(function(){
-    	
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-       
-                event.preventDefault();
-                var hash = this.hash;
-
-                $('html, body').animate({
-                scrollTop: $(hash).offset().top
-                }, 800, function(){
-
-                window.location.hash = hash;
-            });
-         } 
-        });
-        });
-
-        /*$(".nav_link").click(function()
-        {
-            $(".navigation_list").slideUp(1);
-            $(".title").css("display","block");
-            $(".navigation_list").css("display","block");
-                
-               
-        });*/
-        </script>
+        </div>
+    
     </body>
     
     
