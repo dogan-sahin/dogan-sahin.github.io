@@ -10,6 +10,7 @@
         <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
         
         <script type="text/javascript" src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title>Dogan Sahin</title>
         <meta name="viewport" content="width=device-width", initial-scale = 1.0">
     </head>
@@ -18,11 +19,12 @@
         <div class="main">
             <section id="home-page" class="home">
                 <nav class="navigation">
-                    <ul>
-                       <li> <a class="home-btn" href="#home-page"> HOME </a></li> 
-                       <li> <a href="#about-page"> ABOUT </a></li> 
-                       <li> <a href="#portfolio-page"> PORTFOLIO </a></li> 
-                       <li> <a href="#contact-page"> CONTACT </a></li> 
+                        <a href="#" class="dropdown"><i class="fa fa-bars"></i></a>
+                    <ul class="navigation_list">
+                       <li class="nav_link"> <a class="home-btn" href="#home-page"> HOME </a></li> 
+                       <li class="nav_link"> <a href="#about-page"> ABOUT </a></li> 
+                       <li class="nav_link"> <a href="#portfolio-page"> PORTFOLIO </a></li> 
+                       <li class="nav_link"> <a href="#contact-page"> CONTACT </a></li> 
                     </ul>
                 </nav>
                 <div class="title">
@@ -179,6 +181,36 @@
                  
             </section>
         </div> 
+ 
+ 
+ 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(".dropdown").click(function()
+            {
+        
+                if($(".title").is(':visible'))
+                {
+                    $(".navigation_list").slideDown(500);
+                    $(".title").css("display","none"); 
+                }
+
+                else
+                {
+                    $(".navigation_list").slideUp(1);
+                    $(".title").css("display","block");
+                }
+               
+        });
+
+        $(".nav_link").click(function()
+        {
+            $(".navigation_list").slideUp(1);
+            $(".title").css("display","block");
+                
+               
+        });
+        </script>
     </body>
     
     
