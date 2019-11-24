@@ -53,6 +53,7 @@ body
     font-family: 'Alegreya Sans SC';
     font-size: calc(25px + 2.4vw);
     margin-top: -0.8vh;
+    padding: 0.2em;
 
 }
 
@@ -412,7 +413,7 @@ body
     
 }
 
-.about_CV:hover .bar span, .about_CV:focus .bar span
+.about_CV:hover .bar span, .about_CV:active .bar span
 {
     
    display: block;
@@ -578,11 +579,12 @@ body
     flex-direction: column;
     justify-content: space-between;
     color: whitesmoke;
+    margin-top: 5%;
 }
 
 .about_education .institute h2
 {
-   margin-left: 20%;
+  
    font-family: 'Varela Round';
    font-size: calc(16px + 0.5vw);
    color: grey;
@@ -591,7 +593,7 @@ body
 
 .about_education .institute h3
 {
-   margin-left: 20%;
+   
    font-family: 'Varela Round';
    font-size: calc(16px + 0.5vw);
   
