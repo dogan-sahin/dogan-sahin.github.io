@@ -48,7 +48,7 @@ body
     border-top: solid;
     border-bottom: solid;
     font-family: 'Alegreya Sans SC';
-    font-size: calc(20px + 2.7vw);
+    font-size: calc(25px + 2.4vw);
     margin-top: -0.8vh;
 
 }
@@ -57,7 +57,7 @@ body
 {
     
     font-family: 'Julius Sans One';
-    font-size: calc(12px + 0.9vw);
+    font-size: calc(16px + 0.6vw);
     
 }
 
@@ -754,7 +754,7 @@ body
 
 .contact_form .submit_btn
 {
-    width:7vw;
+    width:calc(80px + 0.5vw);
     height:6vh;
     color: lightgreen;
     border: solid;
@@ -957,15 +957,22 @@ input:focus, textarea:focus
         
     }
 
+    .title-lbl
+{
+    
+    margin-top: -10vh;
+    font-size: calc(28px + 2vw);
+}
+
+
     .navigation .navigation_list{
    
-        display: none;
+       
         flex-direction: column;
         margin-top: 7vh;
-        margin-right: 6vh;
-        
-       
+        display: none;
     }
+
 
   
 
@@ -973,7 +980,7 @@ input:focus, textarea:focus
     
         display: inline-block;
         opacity: 75%;
-        font-size: calc(40px + 0.4vw);
+        font-size: calc(35px + 1vw);
         padding-left: 2.5%;
         padding-right: 2.5%;
         margin-top: 5%;
@@ -1014,6 +1021,30 @@ input:focus, textarea:focus
 @media (max-width: 600px)
 {
     
+
+
+    .social_media_links .fa {   
+        transition: none;
+      }
+      .social_media_links .fa:hover{
+        transform: none;
+        
+      }
+
+      .social_media_links .fa-instagram:hover
+      {
+        background: transparent;
+      }
+    
+      .social_media_links .fa-linkedin:hover
+      {
+        background: transparent;
+      }
+    
+      .social_media_links .fa-github:hover
+      {
+        background: transparent;
+      }
 
 .contact
 {
