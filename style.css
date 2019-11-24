@@ -1,6 +1,7 @@
 
 html{
-    scroll-behavior: smooth;
+    
+    /*scroll-behavior: smooth;*/
     -webkit-overflow-scrolling: touch;  
     
 }
