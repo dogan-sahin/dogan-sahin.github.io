@@ -7,4 +7,4 @@ You can visit the page at [dokksen.github.io](https://dokksen.github.io/).
 
 
 
-**If you like my website you can fork this repository and edit the html files for you own preferences by adding your personal details.**
+**If you like my website you can fork this repository and edit the html files for your own preferences by adding your personal details.**
