@@ -32,18 +32,28 @@ $(document).ready(function(){
         $(".navigation_list").slideUp(1);
         $(".title").css("display","block");
         
-        }
-   
+        }   
     });
 
-    
 });
 
-/*$(".nav_link").click(function()
-{
-$(".navigation_list").slideUp(1);
-$(".title").css("display","block");
-$(".navigation_list").css("display","block");
+
+window.addEventListener('scroll', function() {
+	var element = document.querySelector('.skillbox');
+	var position = element.getBoundingClientRect();
+
+	// checking whether fully visible
+	if(position.top >= 0 && position.bottom <= window.innerHeight) {
+        $('.bar span').addClass("fillspan");
+    }
     
-   
-});*/
+    // checking for partial visibility
+	/*if(position.top < window.innerHeight && position.bottom >= 0) {
+        $('.bar span').addClass("fillspan");
+	}*/
+});
+
+
+
+
+
