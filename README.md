@@ -3,7 +3,7 @@ This is my first web development project from scratch to learn the basics of web
 
 It is used as my portfolio website to display my skills, projects and other personal information.
 
-You can visit the page at [dokksen.github.io](https://dokksen.github.io/).
+You can visit the page at [dogan-sahin.com](https://dogan-sahin.com).
 
 
 
