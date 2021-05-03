@@ -408,16 +408,21 @@ body {
 }
 
 .javascript {
-  width: 10%;
+  width: 60%;
 }
 
-.c {
+.csharp {
   width: 40%;
 }
 
 .java {
-  width: 50%;
+  width: 70%;
 }
+
+.react {
+  width: 35%;
+}
+
 
 .turkish {
   width: 100%;
@@ -428,7 +433,7 @@ body {
 }
 
 .english {
-  width: 65%;
+  width: 75%;
 }
 
 .about_education {
